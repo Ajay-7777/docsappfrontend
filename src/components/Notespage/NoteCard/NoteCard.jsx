@@ -49,7 +49,7 @@ export default function NoteCard({ title, body, user, _id,id }) {
   
 
   return (
-    <Card backgroundImage={`url(${notebg})`}>
+    <Card backgroundImage={`url(${notebg})`}   style={{ minWidth: '200px' }}>
       <CardBody>
         <VStack>
           <Heading>{title}</Heading>

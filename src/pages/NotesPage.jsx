@@ -44,11 +44,14 @@ const [id,setid]=useState("");
 
   return (
     <Box mt={20} padding={8}>
-      <Grid
+      <Grid className="gridcard"
         gap={10}
         w={"90%"}
         margin={"auto"}
-        gridTemplateColumns="repeat(4 ,1fr)"
+        // gridTemplateColumns="repeat(4 ,1fr)"
+        // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust min/max width as needed */
+        // grid-auto-rows: auto; /* Adjust row height as needed */
+        // grid-auto-flow: dense; /* Enable wrapping */
       >
         {notes?.map((el) => (
           <NoteCard {...el} />

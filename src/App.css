@@ -111,3 +111,12 @@ top:65px;
   color: #000;
   z-index: 0;
 }
+.gridcard {
+  display: grid;
+  grid-gap: var(--chakra-space-10);
+  width: 90%;
+  margin: auto;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust min/max width as needed */
+  grid-auto-rows: auto; /* Adjust row height as needed */
+  grid-auto-flow: dense; /* Enable wrapping */
+}
