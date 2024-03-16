@@ -13,7 +13,8 @@ import {
 import "./style.css";
 import notebg from "../../../assets/note_bg.png";
 import { useDispatch } from "react-redux";
-
+import { FaEdit, FaTrash, FaFolderOpen } from 'react-icons/fa'; // Import required icons
+import { FaBookOpen } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import { deleteNotes, updateNotes } from "../../../Redux/notes/note.actions";
 import {
@@ -58,8 +59,9 @@ export default function NoteCard({ title, body, user, _id,id }) {
             <>
             <Button onClick={()=>{
                     nav(`/redirect/docs/${_id}`)
-                }}>Open</Button>
-              <Button onClick={onOpen}>Update</Button>
+                }}>
+                   <FaBookOpen /></Button>
+              <Button onClick={onOpen}><FaEdit /></Button>
               
 
               <Modal
@@ -101,7 +103,7 @@ export default function NoteCard({ title, body, user, _id,id }) {
                 dispatch(deleteNotes(_id));
               }}
             >
-              Delete
+               <FaTrash />
             </Button>
           </Flex>
         </VStack>

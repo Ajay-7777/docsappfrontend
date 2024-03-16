@@ -92,7 +92,7 @@ const [id,setid]=useState("");
             </ModalBody>
 
             <ModalFooter>
-              <Button colorScheme="blue" mr={3} onClick={createNote}>
+              <Button colorScheme="blue" mr={3} bg={"yellowgreen"} onClick={createNote}>
                 Create
               </Button>
               <Button onClick={onClose}>Cancel</Button>

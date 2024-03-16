@@ -55,19 +55,59 @@
 top:65px;
   z-index: 1;
   height: 7vh;
-  background: #F3F3F3;
+  background: #f3f1f1;
   border: none !important;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+/* .ql-container.ql-snow {
+  display: flex;
+  min-height: 93vh;
+  left: 200px;
+  right: 200px;
+  max-width: 1000px;
+  background: #F3F3F3;
+  flex-flow: wrap;
+  z-index: -1;
+  
+  border: none !important;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+} */
+.css-1vakbk4{
+  flex-wrap:wrap;
 }
 .ql-container.ql-snow {
   display: flex;
   min-height: 93vh;
+  margin-left: auto; /* Auto margin for left */
+  margin-right: auto; /* Auto margin for right */
+  max-width: 1000px; /* Maximum width */
+  background: #F3F3F3;
   flex-flow: wrap;
-  z-index: 0;
-  background: #f3ebeb;
+  z-index: 0; /* Increase the z-index to ensure it stays above the navbar */
+  position: relative; /* Use position relative to enable z-index */
   border: none !important;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
-.css-1vakbk4{
-  flex-wrap:wrap;
+
+/* Optional: You can add media queries to adjust the max-width for different screen sizes */
+@media (max-width: 1200px) {
+  .ql-container.ql-snow {
+    max-width: 90%; /* Adjust for smaller screens */
+  }
+}
+
+.ql-editor {
+  box-sizing: border-box;
+  line-height: 1.42;
+  height: 100%;
+  outline: none;
+  overflow-y: auto;
+  padding: 12px 15px;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #000;
+  z-index: 0;
 }

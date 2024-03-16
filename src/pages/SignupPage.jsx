@@ -41,7 +41,7 @@ export default function SignupPage(){
 
     return <Flex padding={4} w="100%">
 
-        <Image wi={"50%"} src={"https://img.freepik.com/free-vector/login-concept-illustration_114360-739.jpg?w=740&t=st=1676630553~exp=1676631153~hmac=6cbdb020ef439ca463660edbc265da0d05f487d529f69f814ee3f5de6e0f54cc"}></Image>
+        <Image maxWidth={"40%"}  mt={20} height={500} src={"https://img.freepik.com/free-vector/login-concept-illustration_114360-739.jpg?w=740&t=st=1676630553~exp=1676631153~hmac=6cbdb020ef439ca463660edbc265da0d05f487d529f69f814ee3f5de6e0f54cc"}></Image>
         <VStack w={"50%"}>
 
             

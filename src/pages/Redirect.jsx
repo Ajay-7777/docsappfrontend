@@ -1,13 +1,14 @@
 import { useEffect, useState, useRef } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
-import { Box } from '@mui/material';
+import { Box, colors } from '@mui/material';
 import styled from '@emotion/styled';
 import { io } from 'socket.io-client';
 import { useParams } from 'react-router-dom';
+import { background } from '@chakra-ui/react';
 
 const Component = styled.div`
-    background: #F5F5F5;
+   
 `;
 
 const Editor = () => {
@@ -114,7 +115,7 @@ const Editor = () => {
                 modules={modules}
                 formats={formats}
                 placeholder='Please type here'
-             
+          
             />
            
         </Component>
