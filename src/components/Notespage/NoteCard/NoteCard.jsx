@@ -49,7 +49,7 @@ export default function NoteCard({ title, body, user, _id,id }) {
   
 
   return (
-    <Card backgroundImage={`url(${notebg})`}   style={{ minWidth: '200px' }}>
+    <Card  bg="#8b49d5"  style={{ minWidth: '200px' }}>
       <CardBody>
         <VStack>
           <Heading>{title}</Heading>
@@ -90,7 +90,7 @@ export default function NoteCard({ title, body, user, _id,id }) {
                   </ModalBody>
 
                   <ModalFooter>
-                    <Button colorScheme="blue" mr={3} onClick={updateNote}>
+                    <Button colorScheme="purple" mr={3} onClick={updateNote}>
                       Update
                     </Button>
                     <Button onClick={onClose}>Cancel</Button>

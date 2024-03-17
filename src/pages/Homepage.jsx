@@ -6,9 +6,9 @@ export default function Homepage() {
   return (
     <Box padding={8}>
       <Image className="imgnote"position={"absolute"} src={noteimage} />
-      <Heading mt={16} textAlign={"start"} size={"4xl"}>
-        Note App
-      </Heading>
+      {/* <Heading mt={16} textAlign={"start"} size={"4xl"}>
+       
+      </Heading> */}
       {/* <Text mt={8} maxW={"50%"} textAlign={"justify"}>
         A note application is a software program that allows users to create,
         organize, and manage their digital notes. It is an essential tool for

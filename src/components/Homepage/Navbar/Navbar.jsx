@@ -43,7 +43,7 @@ export default function Navbar() {
                 <Button display={auth==true?"block":"none"} bg=""  onClick={()=>{
                     nav("/notes")
                 }}>All Notes</Button>
-                <Button display={auth==true?"none":"block"}  bg="" onClick={()=>{
+                <Button display={auth==true?"none":"block"}  bg=""  onClick={()=>{
                     nav("/register")
                 }}>Sign up</Button>
                 <Button display={auth==true?"none":"block"}  bg="" onClick={()=>{

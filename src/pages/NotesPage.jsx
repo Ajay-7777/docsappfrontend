@@ -67,7 +67,7 @@ const [id,setid]=useState("");
           w={"80px"}
           h={"80px"}
           borderRadius={50}
-          bg={"yellowgreen"}
+          colorScheme="purple"
           bottom={0}
           right={0}
           onClick={onOpen}
@@ -95,7 +95,7 @@ const [id,setid]=useState("");
             </ModalBody>
 
             <ModalFooter>
-              <Button colorScheme="blue" mr={3} bg={"yellowgreen"} onClick={createNote}>
+              <Button colorScheme="purple" mr={3}  onClick={createNote}>
                 Create
               </Button>
               <Button onClick={onClose}>Cancel</Button>
